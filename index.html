@@ -8,12 +8,14 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
-            body {
-                font-family: "Hanken Grotesk", sans-serif;
-                font-size: 18px;
+            * {
                 padding: 0;
                 margin: 0;
                 box-sizing: border-box;
+            }
+            body {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: 18px;
             }
             main {
                 position: absolute;
@@ -25,14 +27,17 @@
             #result {
                 background: hsl(252, 100%, 67%);
                 border-radius: 32px;
-                width: 289px;
-                height: 418px;
+                width: 368px;
+                height: 512px;
                 padding: 45px 40px 49px;
             }
             #summary {
-                width: 288px;
-                height: 420px;
-                padding: 45px 40px 47px;
+                width: 368px;
+                height: 512px;
+                padding: 45px 40px 46px;
+            }
+            #summary h2 {
+                margin-bottom: 31px;
             }
             #summary ul {
                 list-style: none;
@@ -46,31 +51,35 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
+                margin-top: 18px;
             }
-            #reaction {
+            #summary #reaction {
                 color: hsl(0, 100%, 67%);
-                background: hsla(0, 100%, 67%, 0.132);
+                background: hsl(6, 100%, 98%);
             }
-            #memory {
+            #summary #memory {
                 color: hsl(39, 100%, 56%);
-                background: hsla(39, 100%, 56%, 0.132);
+                background: hsl(42, 100%, 97%);
             }
-            #verbal {
+            #summary #verbal {
                 color: hsl(166, 100%, 37%);
-                background: hsla(166, 100%, 37%, 0.132);
+                background: hsl(173, 53%, 97%);
             }
-            #visual {
+            #summary #visual {
                 color: hsl(234, 85%, 45%);
-                background: hsla(234, 85%, 45%, 0.132);
+                background: hsl(240, 71%, 97%);
+                margin-bottom: 41px;
             }
             #summary button {
-                width: 288px;
-                height: 56px;
+                width: 286px;
+                height: 54px;
                 border-radius: 28px;
                 font-family: "Hanken Grotesk", sans-serif;
                 font-size: 18px;
                 border: 1px solid #000000;
                 cursor: pointer;
+                background: #303B5A;
+                color: hsl(0, 0%, 100%);
             }
             footer { font-size: 11px; text-align: center; }
             footer a { color: hsl(228, 45%, 44%); }
